@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-GB"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Primavera Café · Bridgeton, Glasgow</title>
+<meta name="description" content="Primavera Café, 63 James Street, Bridgeton, Glasgow. Dine in, drive through or get it delivered.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f8ee;--sur:#e6efd8;--tx:#16271d;--mu:#4d6154;--gr:#1f4a32;--pk:#f2a7b8;--lm:#d4e96a;--on:#fff;--bd:#c9d8b8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101a14;--sur:#18271d;--tx:#eef4e6;--mu:#a3b5a8;--gr:#d4e96a;--pk:#f2a7b8;--lm:#d4e96a;--on:#101a14;--bd:#2a3d2f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101a14;--sur:#18271d;--tx:#eef4e6;--mu:#a3b5a8;--gr:#d4e96a;--pk:#f2a7b8;--lm:#d4e96a;--on:#101a14;--bd:#2a3d2f;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.6 'DM Sans',system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pk);outline-offset:3px}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font:600 1.3rem 'Fraunces',Georgia,serif;text-decoration:none}
+nav a{margin-left:22px;text-decoration:none;font-weight:500;color:var(--mu)}
+nav a:hover{color:var(--tx)}
+.hero{padding:40px 0 72px;display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center}
+h1{font:800 clamp(3.4rem,10vw,7rem)/.92 'Fraunces',Georgia,serif;letter-spacing:-.03em;margin:0 0 22px;color:var(--gr)}
+h1 span{display:block;font-weight:400;font-style:italic;font-size:.42em;letter-spacing:0;color:var(--mu);margin-top:14px;line-height:1.1}
+.lead{font-size:1.2rem;max-width:30em;margin:0 0 28px;color:var(--mu)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.b{display:inline-block;padding:14px 24px;border-radius:99px;font-weight:700;text-decoration:none;border:2px solid var(--gr)}
+.b1{background:var(--gr);color:var(--on)}
+.b2{color:var(--gr)}
+.b:hover{transform:translateY(-2px)}
+.bloom{position:relative;aspect-ratio:1;max-width:420px;justify-self:center;width:100%}
+.bloom svg{width:100%;height:100%}
+.petal{transform-box:fill-box;transform-origin:50% 100%;animation:open 1.4s cubic-bezier(.2,.8,.2,1) both}
+@keyframes open{from{transform:scale(0) rotate(-40deg);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.petal{animation:none}html{scroll-behavior:auto}}
+.strip{background:var(--gr);color:var(--on)}
+.strip .w{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-top:28px;padding-bottom:28px}
+.strip b{display:block;font:600 1.9rem 'Fraunces',Georgia,serif;color:var(--lm)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .strip{background:var(--sur);color:var(--tx)}}
+:root[data-theme="dark"] .strip{background:var(--sur);color:var(--tx)}
+section{padding:80px 0}
+h2{font:600 clamp(2rem,5vw,3rem)/1.1 'Fraunces',Georgia,serif;margin:0 0 18px;letter-spacing:-.01em}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.ways{display:grid;gap:14px}
+.way{padding:20px 22px;border-radius:18px;background:var(--sur);border:1px solid var(--bd)}
+.way:nth-child(2){margin-left:28px;background:color-mix(in srgb,var(--pk) 28%,var(--bg))}
+.way:nth-child(3){margin-left:56px}
+.way h3{margin:0 0 2px;font:600 1.25rem 'Fraunces',Georgia,serif}
+.way p{margin:0;color:var(--mu)}
+.find{background:var(--sur)}
+dl{margin:22px 0 0;display:grid;grid-template-columns:max-content 1fr;gap:12px 24px}
+dt{color:var(--mu)}dd{margin:0;font-weight:500}
+.pin{background:var(--bg);border:1px solid var(--bd);border-radius:20px;padding:28px}
+.pin svg{width:100%;height:auto;display:block;margin-bottom:12px}
+.pin svg text{font:500 13px 'DM Sans',sans-serif;fill:var(--mu)}
+.note{color:var(--mu);font-size:.95rem}
+.rev{text-align:center;max-width:36em;margin:0 auto}
+.stars{font-size:2rem;color:var(--pk);letter-spacing:.2em}
+.rev .big{font:800 clamp(4rem,12vw,7rem)/1 'Fraunces',Georgia,serif;color:var(--gr);margin:6px 0}
+footer{border-top:1px solid var(--bd);padding:28px 0 40px;color:var(--mu);font-size:.95rem}
+footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:760px){.hero,.two{grid-template-columns:1fr}.hero{padding-top:12px}.strip .w{grid-template-columns:1fr}nav a:not(.keep){display:none}.way:nth-child(n){margin-left:0}}
+</style></head><body>
+<div class="w"><header><a class="logo" href="#top">Primavera Café</a>
+<nav aria-label="Main"><a href="#visit">Ways to enjoy</a><a href="#find">Find us</a><a class="keep" href="tel:07836425338">07836 425338</a></nav></header>
+
+<main id="top"><div class="hero">
+<div><h1>Primavera<span>a café for Bridgeton</span></h1>
+<p class="lead">Coffee, a bite and a friendly welcome on James Street. Sit in, swing through the drive-through, or have it brought to your door.</p>
+<div class="btns"><a class="b b1" href="tel:07836425338">Call to order</a><a class="b b2" href="#find">Find the café</a></div></div>
+<div class="bloom" aria-hidden="true"><svg viewBox="0 0 200 200">
+<g class="petal" style="animation-delay:.1s"><ellipse cx="100" cy="52" rx="26" ry="46" fill="var(--pk)"/></g>
+<g class="petal" style="animation-delay:.25s"><ellipse cx="100" cy="52" rx="26" ry="46" fill="var(--pk)" opacity=".8" transform="rotate(72 100 100)"/></g>
+<g class="petal" style="animation-delay:.4s"><ellipse cx="100" cy="52" rx="26" ry="46" fill="var(--pk)" opacity=".9" transform="rotate(144 100 100)"/></g>
+<g class="petal" style="animation-delay:.55s"><ellipse cx="100" cy="52" rx="26" ry="46" fill="var(--pk)" opacity=".8" transform="rotate(216 100 100)"/></g>
+<g class="petal" style="animation-delay:.7s"><ellipse cx="100" cy="52" rx="26" ry="46" fill="var(--pk)" opacity=".9" transform="rotate(288 100 100)"/></g>
+<circle class="petal" style="animation-delay:.9s" cx="100" cy="100" r="22" fill="var(--lm)"/></svg></div>
+</div></main></div>
+
+<div class="strip"><div class="w">
+<div><b>5.0 out of 5</b>from 13 Google reviews</div>
+<div><b>£1–10</b>per person</div>
+<div><b>Opens 10 am</b>on Sundays</div></div></div>
+
+<section id="visit"><div class="w two">
+<div><h2>Your table, your car or your door</h2>
+<p>Primavera is a neighbourhood café in Bridgeton, east Glasgow. Come in for a sit-down, grab something on the move, or order online and have it delivered.</p></div>
+<div class="ways">
+<div class="way"><h3>Dine in</h3><p>Take a seat and stay a while.</p></div>
+<div class="way"><h3>Drive through</h3><p>Order without leaving the car.</p></div>
+<div class="way"><h3>Delivery and online ordering</h3><p>Order ahead and have it brought to you.</p></div></div></div></section>
+
+<section class="find" id="find"><div class="w two">
+<div><h2>Find us on James Street</h2>
+<dl><dt>Address</dt><dd>63 James St, Bridgeton, Glasgow G40 1BZ</dd>
+<dt>Phone</dt><dd><a href="tel:07836425338">07836 425338</a></dd>
+<dt>Hours</dt><dd>Opens 10 am on Sundays. Please call to check other days.</dd></dl>
+<div class="btns" style="margin-top:28px"><a class="b b1" href="https://www.google.com/maps?q=55.8478756,-4.2300063">Open in Google Maps</a><a class="b b2" href="https://www.openstreetmap.org/?mlat=55.8478756&amp;mlon=-4.2300063#map=17/55.8478756/-4.2300063">OpenStreetMap</a></div></div>
+<div class="pin"><svg viewBox="0 0 400 240" role="img" aria-label="Café location in Bridgeton, east Glasgow, near Bridgeton Cross and Glasgow Green">
+<rect width="400" height="240" rx="14" fill="var(--sur)"/>
+<g stroke="var(--bd)" stroke-width="2"><line x1="0" y1="70" x2="400" y2="70"/><line x1="0" y1="160" x2="400" y2="160"/><line x1="120" y1="0" x2="120" y2="240"/><line x1="290" y1="0" x2="290" y2="240"/></g>
+<circle cx="120" cy="150" r="5" fill="var(--mu)"/><text x="16" y="136">Glasgow Green</text>
+<circle cx="180" cy="110" r="5" fill="var(--mu)"/><text x="192" y="106">Bridgeton Cross</text>
+<circle cx="160" cy="180" r="22" fill="var(--pk)" opacity=".45"/><circle cx="160" cy="180" r="9" fill="var(--gr)"/>
+<text x="180" y="200" style="font-weight:700;fill:var(--tx)">Primavera Café</text>
+<text x="14" y="228" style="font-size:11px">Schematic, not to scale. Landmarks approximate.</text></svg>
+<p class="note" style="margin:0">Bridgeton, east Glasgow. Postcode G40 1BZ.</p></div></div></section>
+
+<section><div class="w rev"><div class="stars" aria-hidden="true">★★★★★</div>
+<div class="big">5.0</div>
+<h2>Rated five stars by 13 reviewers on Google</h2>
+<p>Come and see why. Prices run from £1 to £10 a head.</p>
+<a class="b b1" href="https://www.google.com/maps?q=55.8478756,-4.2300063">Read the reviews</a></div></section>
+
+<footer><div class="w"><span>© 2026 Primavera Café · 63 James St, Glasgow G40 1BZ</span><a href="tel:07836425338">07836 425338</a></div></footer>
+</body></html>
